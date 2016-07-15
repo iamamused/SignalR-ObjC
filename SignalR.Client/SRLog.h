@@ -22,8 +22,9 @@
 
 #if __has_include("DDLog.h")
 #import <CocoaLumberjack/DDLog.h>
+#import <CocoaLumberjack/DDLegacyMacros.h>
 
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+static const int ddLogLevel = DDLogLevelVerbose;
 
 #if defined( LOG_ASYNC_ENABLED )
     #undef LOG_ASYNC_ENABLED
